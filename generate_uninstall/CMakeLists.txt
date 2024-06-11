@@ -71,7 +71,7 @@ else ()
    ")
    install (FILES "${CMAKE_CURRENT_BINARY_DIR}/${UNINSTALL_PROG}" DESTINATION "${UNINSTALL_PROG_DIR}" PERMISSIONS ${UNINSTALL_PERMISSIONS})
 
-   add_custom_target (uninstall
+   add_custom_target (uninstall_mongo_cxx_driver
       COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/${UNINSTALL_PROG}"
    )
 endif ()
